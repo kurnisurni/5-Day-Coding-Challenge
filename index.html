@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+     <header>
+        <h1>Perfect homemade pancake recipe</h1>
+        <img src="https://i2.wp.com/duesouth.media/wp-content/uploads/2019/03/Pancake-recipe.jpg?w=1920&ssl=1">
+        <p>This is the perfect pancake recipe. They are light, fluffy, and only require simple ingredients that you probably already have on hand in your kitchen. Please review the following information for tips and frequently asked questions. You will find the printable recipe card at the bottom.</p>
+    </header>
+    <section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+        <h2>
+          Ingredients 
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </h2>
+        <ul>
+          <li>1 1/2 cups all-purpose flour</li>
+          <li>2 tablespoons sugar</li>
+          <li>2 teaspoons baking powder</li>
+          <li>1 teaspoon baking soda</li>
+          <li>1/2 teaspoon salt</li>
+          <li>1 cup milk or buttermilk</li>
+          <li>2 large eggs</li>
+          <li>1/4 cup melted butter</li>
+        </ul>
+    </section>
+    <section id="instructions" onmouseover="instructionsHover()" onmouseout="instructionsNormal()">
+        <h2>
+          Instructions 
+          <i class="fa fa-list-ol" aria-hidden="true"></i>
+          </h2>
+        <ol>
+          <li>In a large mixing bowl, sift together flour, sugar baking powder, baking soda, and salt.</li>
+          <li>Whisk in milk, eggs, and melted butter just until combined.</li>
+          <li>Preheat a flat griddle over medium-high heat.</li>
+          <li>Scoop 1/4 cup of pancake batter onto griddle. Let pancakes cook until bubbles form before flipping.</li>
+          <li>Cook other side until golden brown. Serve hot with syrup.</li>
+        </ol>
+    </section>
+    <footer>
+      Copyright @kanios 2019
+    </footer>
+    </div>
+    <script>
+      function ingredientsHover() {
+        document.getElementById("ingredients").firstElementChild.firstElementChild.style.fontSize = "300%";
+      }
+      function ingredientsNormal() {
+        document.getElementById("ingredients").firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+      function instructionsHover() {
+        document.getElementById("instructions").firstElementChild.firstElementChild.style.fontSize = "300%";
+      }
+      function instructionsNormal() {
+        document.getElementById("instructions").firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+    </script>
+  </body>
+</html>
